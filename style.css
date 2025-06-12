@@ -73,3 +73,16 @@ button:hover {
 .log-content.active {
   display: block;
 }
+
+.log-content {
+  display: none;
+}
+
+.log-content.active {
+  display: block;
+}
+
+.tab-btn.active {
+  background-color: #333;
+  color: #fff;
+}
