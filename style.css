@@ -34,3 +34,42 @@ button:hover {
   color: #999;
   margin-bottom: 30px;
 }
+
+
+/* log and diary */
+.log-container {
+  margin-top: 20px;
+  background: #111;
+  border: 1px solid #444;
+  padding: 10px;
+  color: #ccc;
+  font-family: monospace;
+}
+
+.log-tabs {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  background: #222;
+  color: #aaa;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+  color: #fff;
+  border-bottom: 2px solid #999;
+}
+
+.log-content {
+  display: none;
+}
+
+.log-content.active {
+  display: block;
+}
