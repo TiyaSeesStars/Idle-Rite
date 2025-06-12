@@ -45,5 +45,13 @@ function openLog(event, tabName) {
 
   document.getElementById(tabName).classList.add("active");
   event.target.classList.add("active");
+//adds stuff to the log
+  function addWhisper(text) {
+  const whisperLog = document.getElementById("whispers");
+  const entry = document.createElement("p");
+  entry.innerHTML = `<em>They whisper:</em> "${text}"`;
+  whisperLog.appendChild(entry);
+}
+
 }
 
