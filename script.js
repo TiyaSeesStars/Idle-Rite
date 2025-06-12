@@ -47,4 +47,3 @@ function openLog(event, tabName) {
   event.target.classList.add("active");
 }
 
-}
