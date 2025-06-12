@@ -36,7 +36,7 @@ function updateDisplay() {
 }
 
 // the log and diary
-function openLog(tabName) {
+function openLog(event, tabName) {
   const tabs = document.querySelectorAll(".log-content");
   const buttons = document.querySelectorAll(".tab-btn");
 
@@ -45,4 +45,6 @@ function openLog(tabName) {
 
   document.getElementById(tabName).classList.add("active");
   event.target.classList.add("active");
+}
+
 }
