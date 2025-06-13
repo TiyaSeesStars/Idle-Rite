@@ -23,6 +23,8 @@
   <div class="log-tabs">
 <button class="tab-btn active" onclick="openLog(event, 'diary')">📖 Diary</button>
 <button class="tab-btn" onclick="openLog(event, 'whispers')">🕷️ Whispers</button>
+<button class="tab-btn" onclick="openLog(event, 'achievements')">🏆 Achievements</button>
+
   </div>
   <div id="diary" class="log-content active">
     <p><em>Day 1:</em> I woke up remembering too much and not enough...</p>
@@ -32,6 +34,13 @@
     <p><em>They whisper:</em> “Keep clicking... they haven’t noticed yet.”</p>
     <p><em>They whisper:</em> “The rite must continue.”</p>
   </div>
+    <div id="achievements" class="log-content">
+  <ul id="achievements-list">
+    <li><strong>“Begin the Rite”</strong> — Start the game</li>
+    <!-- More will be added dynamically -->
+  </ul>
+</div>
+
 </div>
 
   <script src="script.js"></script>
