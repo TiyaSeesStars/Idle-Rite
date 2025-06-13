@@ -35,6 +35,9 @@ button:hover {
   margin-bottom: 30px;
 }
 
+ul {
+  list-style-type: none;
+}
 
 /* log and diary */
 .log-container {
