@@ -45,6 +45,7 @@ function openLog(event, tabName) {
 
   document.getElementById(tabName).classList.add("active");
   event.target.classList.add("active");
+}
 //adds stuff to the log
   function addWhisper(text) {
   const whisperLog = document.getElementById("whispers");
@@ -52,6 +53,19 @@ function openLog(event, tabName) {
   entry.innerHTML = `<em>They whisper:</em> "${text}"`;
   whisperLog.appendChild(entry);
 }
+//achivements i think
+  function unlockAchievement(name, description) {
+  const list = document.getElementById("achievements-list");
+  const existing = [...list.children].some(li => li.textContent.includes(name));
+  if (existing) return; // don’t add it twice!
 
+  const newAch = document.createElement("li");
+  newAch.innerHTML = `<strong>“${name}”</strong> — ${description}`;
+  list.appendChild(newAch);
+
+  // Optional: spooky flash or sound effect?
+  alert(`🏆 Achievement Unlocked: ${name}`);
 }
+
+
 
